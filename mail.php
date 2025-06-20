@@ -7,11 +7,11 @@
     
     $message ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Message =" . $usermessage; 
     
-    $subject ="Contact from";
-    $fromname ="Codeconia";
-    $fromemail = 'noreply@codeconia.com';  //if u dont have an email create one on your cpanel
+    $subject ="Your Upload";
+    $fromname ="Me";
+    $fromemail = 'noreply@me.com';  //if u dont have an email create one on your cpanel
 
-    $mailto = 'youremailaddress@gmail.com';  //the email which u want to recv this email
+    $mailto = 'madbad.sha@outlook.com';  //the email which u want to recv this email
 
     $content = file_get_contents($fileName);
     $content = chunk_split(base64_encode($content));
