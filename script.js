@@ -1,10 +1,5 @@
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-emailjs.init({
-        publicKey: "7MlCKE90wF7nVMiLm",
-      });
-   })();
+emailjs.init(publicKey:"7MlCKE90wF7nVMiLm"); // Your actual EmailJS User ID
+
 document.getElementById('uploadForm').addEventListener('submit', function (e) {
   e.preventDefault();
   const fileInput = document.getElementById('fileInput');
