@@ -1,5 +1,8 @@
 // Initialize EmailJS with your User ID
-emailjs.init({publicKey: "7MlCKE90wF7nVMiLm",}); 
+emailjs.init({
+        publicKey: "7MlCKE90wF7nVMiLm",
+      });
+   })();
 document.getElementById('uploadForm').addEventListener('submit', function (e) {
   e.preventDefault();
   const fileInput = document.getElementById('fileInput');
