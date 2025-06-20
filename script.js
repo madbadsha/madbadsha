@@ -1,6 +1,5 @@
 // Initialize EmailJS with your User ID
-emailjs.init('YOUR_EMAILJS_USER_ID'); // Replace with your EmailJS user ID
-
+emailjs.init({publicKey: "7MlCKE90wF7nVMiLm",}); 
 document.getElementById('uploadForm').addEventListener('submit', function (e) {
   e.preventDefault();
   const fileInput = document.getElementById('fileInput');
@@ -15,7 +14,7 @@ document.getElementById('uploadForm').addEventListener('submit', function (e) {
   const reader = new FileReader();
 
   reader.onload = function () {
-    emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", {
+    emailjs.send("service_zzvbztd", "Outlook", {
       file_name: file.name,
       file_data: reader.result,
     }).then(
